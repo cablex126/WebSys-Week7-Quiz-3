@@ -1,0 +1,115 @@
+/* styles.css */
+:root {
+    --primary-color: #ffc72c; /* McDonald's yellow */
+    --secondary-color: #d11224; /* McDonald's red */
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.product-details {
+    flex: 2;
+    padding-right: 2rem;
+}
+
+.product-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-details p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #b80f20; /* Darker red on hover */
+}
+
+.related-products {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.related-products ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-products ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .product-details {
+        padding-right: 0;
+    }
+
+    .related-products {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}

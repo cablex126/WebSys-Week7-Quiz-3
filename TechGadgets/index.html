@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="popup-message" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; z-index: 1000;">
+        Item added to cart!
+    </div>
+
+    <script src="script.js"></script>
+    <header>
+        <h1>McDonalds</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="product-details">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAFGszSTP9q1pnlyb0YTgDctpHrgS0PGQwea4B7eO6uAfdFSSj6q-NulqJzhzXVjQl3p-RYB7YssJB9DwdZoUQj4N98bP4-6_EGNa5w" alt="Cheese Burger" aria-label="Cheese Burger">
+            <h1>Cheese Burger</h1>
+            <p>A burger is a patty of ground beef grilled and placed between two halves of a bun. Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor. Burgers are considered an American food but are popular around the world.</p>
+            <p><strong>Price:</strong> ₱ 72.00 </p>
+            <button class="add-to-cart" aria-label="Add Product to Cart">Add to Cart</button>
+        </article>
+        
+        <aside class="related-products">
+            <h2>Related Products</h2>
+            <ul>
+                <li><a href="#Quarter Pounder">Quarter Pounder</a></li>
+                <li><a href="#Triple Cheeseburger">Triple Cheeseburger</a></li>
+                <li><a href="#BigMac">BigMac</a></li>
+            </ul>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 McDonalds. All rights reserved.</p>
+    </footer>
+</body>
+</html>
